@@ -1,4 +1,4 @@
-<template>
+<template> //HTML
   <div>
     <form @submit.prevent="submitForm" v-if="!formSubmitted" class="form">
       <h2>Ticket Details</h2>
@@ -87,12 +87,13 @@
   </div>
 </template>
 
+//this is where all the Javascript logic will go
 <script>
 export default {
   data() {
     return {
-      categories: ['Hardware', 'Software', 'Network', 'In-Processing'],
-      typeOptions: [],
+      categories: ['Hardware', 'Software', 'Network', 'In-Processing'], //default categories 
+      typeOptions: [], //will be empty, dependent on category selected
       selectedType: '',
       selectedTypes: [],
       subject: "",
@@ -105,6 +106,7 @@ export default {
   methods: {
     submitForm() {
       this.formSubmitted = true;
+      //add more validation if needed
     },
     updateTypeOptions() {
       switch (this.category) {
@@ -121,7 +123,7 @@ export default {
           this.typeOptions = ['Access Badge', 'Common Access Card (CAC)', 'SIPR', 'Trello'];
           break;
         default:
-          this.typeOptions = [];
+          this.typeOptions = [];  // Reset selected types when category changes
       }
     },
     addSelectedType() {
@@ -147,12 +149,14 @@ export default {
     },
     returnToForm() {
       this.formSubmitted = false;
-      this.cancelForm();
+      this.cancelForm(); //methods are reusable! form will be cleared and reset
     }
   }
 };
 </script>
 
+
+//CSS
 <style scoped>
 .container {
   display: flex;

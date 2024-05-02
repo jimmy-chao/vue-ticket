@@ -1,6 +1,6 @@
 # vue-ticket
 
-Hello, this is a Ticket Form I created using Vue.js.
+Hello, my name is Jimmy! This is a Ticket Form I created using Vue.js.
 
 I started by first reading the documents from the Vue.js site:
 
@@ -29,12 +29,11 @@ npm install
 npm run serve
 ```
 
-And we are ready to go!
+And we are ready to go! 🚀
 
 ## Ticket Form
 
 The ticket form allows users to create a ticket will the following information:
-Submission Requirements:
 
 1. **Category** should be a dropdown menu with the following options:
    • Hardware, Software, Network, In-Processing
@@ -49,4 +48,4 @@ Submission Requirements:
 7. **Submit** button should submit all the information and display the Ticket Details page
    with all the information you used in the previous form.
 
-Overall, it was a greate learning experience of using a new framework.
+Overall, it was a great learning experience of using a new framework.
